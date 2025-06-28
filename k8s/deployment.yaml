@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: msa-fe
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: msa-fe
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: msa-fe
+    spec:
+      containers:
+      - name: msa-fe
+        image: nghia2742/msa-fe:latest
+        ports:
+        - containerPort: 3000
