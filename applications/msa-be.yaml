@@ -4,7 +4,7 @@ metadata:
   name: msa-be
   namespace: argocd
 spec:
-  project: msa-be
+  project: default
   source:
     repoURL: https://github.com/nghia2742/msa-config.git
     targetRevision: HEAD

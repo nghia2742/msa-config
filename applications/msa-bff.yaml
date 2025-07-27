@@ -4,7 +4,7 @@ metadata:
   name: msa-bff
   namespace: argocd
 spec:
-  project: msa-bff
+  project: default
   source:
     repoURL: https://github.com/nghia2742/msa-config.git
     targetRevision: HEAD
