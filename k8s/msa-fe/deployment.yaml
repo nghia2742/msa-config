@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: msa-fe
-        image: nghia2742/msa-fe:c246f68507a38a884439dd6ca9487177e23a6594
+        image: nghia2742/msa-fe:ca9a039a649ba02f3ddb56c6518693569e23f1b2
         ports:
         - containerPort: 3000
