@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: msa-bff
-        image: nghia2742/msa-bff:latest
+        image: nghia2742/msa-bff:b1dd5c33a942f95e7342331a11f7255201797a79
         ports:
         - containerPort: 4000
