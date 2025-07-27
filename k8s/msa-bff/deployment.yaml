@@ -17,4 +17,4 @@ spec:
       - name: msa-bff
         image: nghia2742/msa-bff:latest
         ports:
-        - containerPort: 3001
+        - containerPort: 4000
