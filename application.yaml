@@ -4,7 +4,7 @@ metadata:
   name: msa-fe
   namespace: argocd
 spec:
-  project: default
+  project: msa-fe
 
   source:
     repoURL: https://github.com/nghia2742/msa-config.git
