@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: msa-be-deployment
+  namespace: msa-be
+spec:
+  selector:
+    matchLabels:
+      app: msa-be
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: msa-be
+    spec:
+      containers:
+      - name: msa-be
+        image: nghia2742/msa-be:latest
+        ports:
+        - containerPort: 5000

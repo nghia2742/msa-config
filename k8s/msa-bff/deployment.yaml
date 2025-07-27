@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: msa-bff-deployment
+  namespace: msa-bff
+spec:
+  selector:
+    matchLabels:
+      app: msa-bff
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: msa-bff
+    spec:
+      containers:
+      - name: msa-bff
+        image: nghia2742/msa-bff:latest
+        ports:
+        - containerPort: 3001
