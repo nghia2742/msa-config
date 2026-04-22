@@ -5,3 +5,7 @@ resources:
 nameSuffix: -stage
 commonLabels:
   env: stage
+images:
+- name: nghia2742/msa-bff
+  newName: nghia2742/msa-bff
+  newTag: 989e4c86556024336c02d9acbf8da53cc26fae07
