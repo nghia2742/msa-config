@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: msa-fe-dev
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/nghia2742/msa-config.git
+    targetRevision: HEAD
+    path: k8s/msa-fe/overlays/dev
+  destination: 
+    server: https://kubernetes.default.svc
+    namespace: msa-fe-dev
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+    automated:
+      selfHeal: true
+      prune: true

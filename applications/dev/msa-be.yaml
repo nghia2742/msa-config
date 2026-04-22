@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: msa-be
+  name: msa-be-dev
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/nghia2742/msa-config.git
     targetRevision: HEAD
-    path: k8s/msa-be
+    path: k8s/msa-be/overlays/dev
   destination: 
     server: https://kubernetes.default.svc
-    namespace: msa-be
+    namespace: msa-be-dev
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
