@@ -5,3 +5,7 @@ resources:
 nameSuffix: -dev
 commonLabels:
   env: dev
+images:
+- name: nghia2742/msa-be
+  newName: nghia2742/msa-be
+  newTag: 00c678c544f6f90855f2395766bbc7eaf9ac4507
