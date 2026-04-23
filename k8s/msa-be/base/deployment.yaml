@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: msa-be-deployment
-  namespace: msa-be
 spec:
   selector:
     matchLabels:
