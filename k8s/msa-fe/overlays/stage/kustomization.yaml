@@ -10,3 +10,9 @@ images:
 - name: nghia2742/msa-fe
   newName: nghia2742/msa-fe
   newTag: ab008bd31f77bcfd37b279ddc07704074731849c
+
+configMapGenerator:
+- name: msa-fe-config
+  literals:
+  - NEXT_PUBLIC_ENVIRONMENT=stage
+  - NEXT_PUBLIC_BFF_ENDPOINT=http://msa-bff-service-stage.msa-bff-stage.svc.cluster.local:4000/bff

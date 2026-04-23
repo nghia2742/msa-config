@@ -14,3 +14,9 @@ patches:
     - op: replace
       path: /spec/replicas
       value: 3
+
+configMapGenerator:
+- name: msa-fe-config
+  literals:
+  - NEXT_PUBLIC_ENVIRONMENT=production
+  - NEXT_PUBLIC_BFF_ENDPOINT=https://api.msa.com/bff # Giả sử endpoint production

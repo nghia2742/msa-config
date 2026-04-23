@@ -17,3 +17,6 @@ spec:
         image: nghia2742/msa-fe:ca9a039a649ba02f3ddb56c6518693569e23f1b2
         ports:
         - containerPort: 3000
+        envFrom:
+        - configMapRef:
+            name: msa-fe-config

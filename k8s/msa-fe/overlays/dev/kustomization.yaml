@@ -10,3 +10,9 @@ images:
 - name: nghia2742/msa-fe
   newName: nghia2742/msa-fe
   newTag: e6fa4748b7024c6cb7294e6878d723c696cfcd4c
+
+configMapGenerator:
+- name: msa-fe-config
+  literals:
+  - NEXT_PUBLIC_ENVIRONMENT=development
+  - NEXT_PUBLIC_BFF_ENDPOINT=http://msa-bff-service-dev:4000/bff
