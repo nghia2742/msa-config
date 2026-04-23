@@ -4,5 +4,5 @@ namespace: msa-bff-dev
 resources:
 - ../../base
 nameSuffix: -dev
-commonLabels:
+labels:
   env: dev

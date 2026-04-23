@@ -4,7 +4,7 @@ namespace: msa-be-prod
 resources:
 - ../../base
 nameSuffix: -prod
-commonLabels:
+labels:
   env: prod
 patches:
 - target:

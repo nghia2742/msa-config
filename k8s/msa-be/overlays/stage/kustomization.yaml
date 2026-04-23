@@ -4,5 +4,5 @@ namespace: msa-be-stage
 resources:
 - ../../base
 nameSuffix: -stage
-commonLabels:
+labels:
   env: stage

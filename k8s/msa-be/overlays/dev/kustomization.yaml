@@ -4,7 +4,7 @@ namespace: msa-be-dev
 resources:
 - ../../base
 nameSuffix: -dev
-commonLabels:
+labels:
   env: dev
 images:
 - name: nghia2742/msa-be

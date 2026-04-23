@@ -4,7 +4,7 @@ namespace: msa-fe-stage
 resources:
 - ../../base
 nameSuffix: -stage
-commonLabels:
+labels:
   env: stage
 images:
 - name: nghia2742/msa-fe
