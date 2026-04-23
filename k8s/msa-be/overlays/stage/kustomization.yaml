@@ -5,4 +5,6 @@ resources:
 - ../../base
 nameSuffix: -stage
 labels:
-  env: stage
+- includeSelectors: true
+  pairs:
+    env: stage

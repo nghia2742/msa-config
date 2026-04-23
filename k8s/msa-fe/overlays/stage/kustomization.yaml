@@ -5,7 +5,9 @@ resources:
 - ../../base
 nameSuffix: -stage
 labels:
-  env: stage
+- includeSelectors: true
+  pairs:
+    env: stage
 images:
 - name: nghia2742/msa-fe
   newName: nghia2742/msa-fe

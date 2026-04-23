@@ -5,7 +5,9 @@ resources:
 - ../../base
 nameSuffix: -prod
 labels:
-  env: prod
+- includeSelectors: true
+  pairs:
+    env: prod
 patches:
 - target:
     kind: Deployment
