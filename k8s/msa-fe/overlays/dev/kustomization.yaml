@@ -9,7 +9,7 @@ commonLabels:
 images:
 - name: nghia2742/msa-fe
   newName: nghia2742/msa-fe
-  newTag: e6fa4748b7024c6cb7294e6878d723c696cfcd4c
+  newTag: ecdf60c6b0de5926256f61100d2db634f0b35392
 
 configMapGenerator:
 - name: msa-fe-config
