@@ -8,4 +8,4 @@ commonLabels:
 images:
 - name: nghia2742/msa-be
   newName: nghia2742/msa-be
-  newTag: 00c678c544f6f90855f2395766bbc7eaf9ac4507
+  newTag: c67fae2dd534b4f1d2dfad824cb9addcf91b6979
